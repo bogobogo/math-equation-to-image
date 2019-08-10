@@ -36,7 +36,7 @@ function createPlotAndImageDownload(equation) {
     ]
   });
 
-  html2canvas(document.querySelector('#root')).then(canvas => {
+  html2canvas(document.querySelector('svg')).then(canvas => {
       const image = canvas.toDataURL('image/png')
         .replace('image/png', 'image/octet-stream');
         console.log(image)
